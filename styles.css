@@ -1,0 +1,40 @@
+.split-pane {
+  display: flex;
+  flex: 1;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  user-select: text;
+}
+
+.split-plane.vertical {
+  flex-direction: row;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.split-pane.horizontal {
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.pane {
+  flex: 1;
+  position: relative;
+  outline: none;
+}
+
+.pane.has-size {
+  flex: none;
+}
+
+.pane.horizontal.has-size {
+  display: flex;
+}
