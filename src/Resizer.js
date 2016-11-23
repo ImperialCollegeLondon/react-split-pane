@@ -4,7 +4,7 @@ class Resizer extends Component {
 
     render() {
         const { split, className } = this.props;
-        const classes = ['Resizer', split, className];
+        const classes = ['rsp-resizer', split, className];
         return (
             <span
                 className={classes.join(' ')}

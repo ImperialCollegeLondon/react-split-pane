@@ -9,7 +9,7 @@ class Pane extends Component {
 
     render() {
         const split = this.props.split;
-        const classes = ['pane', split, this.props.className];
+        const classes = ['rsp-pane', split, this.props.className];
 
         const style = Object.assign({}, this.props.style || {});
 

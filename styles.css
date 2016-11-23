@@ -1,4 +1,4 @@
-.split-pane {
+.rsp-container {
   display: flex;
   flex: 1;
   position: relative;
@@ -7,7 +7,7 @@
   user-select: text;
 }
 
-.split-plane.vertical {
+.rsp-container.vertical {
   flex-direction: row;
   height: 100%;
   position: absolute;
@@ -15,7 +15,7 @@
   right: 0;
 }
 
-.split-pane.horizontal {
+.rsp-container.horizontal {
   flex-direction: column;
   height: 100%;
   min-height: 100%;
@@ -25,16 +25,16 @@
   width: 100%;
 }
 
-.pane {
+.rsp-pane {
   flex: 1;
   position: relative;
   outline: none;
 }
 
-.pane.has-size {
+.rsp-pane.has-size {
   flex: none;
 }
 
-.pane.horizontal.has-size {
+.rsp-pane.horizontal.has-size {
   display: flex;
 }

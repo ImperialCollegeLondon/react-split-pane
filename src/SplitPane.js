@@ -170,7 +170,7 @@ class SplitPane extends Component {
         const disabledClass = allowResize ? '' : 'disabled';
 
         const children = this.props.children;
-        const classes = ['split-pane', this.props.className, split, disabledClass];
+        const classes = ['rsp-container', this.props.className, split, disabledClass];
 
         const pane1Style =
             Object.assign({},
@@ -190,7 +190,7 @@ class SplitPane extends Component {
 
                 <Pane
                     ref={(node) => { this.pane1 = node; }}
-                    key="pane1" className="Pane1"
+                    key="pane1" className="pane-1"
                     style={pane1Style}
                     split={split}
                     size={this.props.primary === 'first' ?
@@ -213,7 +213,7 @@ class SplitPane extends Component {
                 <Pane
                     ref={(node) => { this.pane2 = node; }}
                     key="pane2"
-                    className="Pane2"
+                    className="pane-2"
                     style={pane2Style}
                     split={split}
                     size={this.props.primary === 'second' ?
